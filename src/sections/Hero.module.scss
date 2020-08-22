@@ -1,0 +1,51 @@
+.wrapper {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      ${({ theme }) => theme.palette.primary.light + 'CC'},
+      ${({ theme }) => theme.palette.primary.dark + 'CC'}
+    ),
+    url(${hero});
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        ${({ theme }) => theme.palette.primary.light + 'CC'},
+        ${({ theme }) => theme.palette.primary.dark + 'CC'}
+      ),
+      url(${hero});
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+
+const LogoBox = styled.div`
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+`;
+const LogoImg = styled.img`
+  height: 3.5rem;
+`;
+
+const TextBox = styled.div`
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+`;
