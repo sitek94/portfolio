@@ -1,14 +1,17 @@
 import React from 'react';
-import Hero from './sections/Hero';
 
+import Header from './sections/Header';
+import Foundation from './sections/Foundation';
+import Layout from './layouts/Layout';
 
 function App() {
   
 
   return (
-    <div className="App light-theme">
-      <Hero />
-    </div>
+    <Layout theme="light-theme">
+      <Header />
+      <Foundation />
+    </Layout>
   );
 }
 
