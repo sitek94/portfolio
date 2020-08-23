@@ -1,4 +1,4 @@
 .layout {
     display: grid;
-    grid-template-rows: 100vh 100vh;
+    grid-template-rows: repeat(3, 100vh);
 }
