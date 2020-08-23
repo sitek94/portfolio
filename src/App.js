@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './sections/Header';
-import Foundation from './sections/Foundation';
-import Layout from './layouts/Layout';
+import Header from './components/Header';
+
+import Layout from './layout';
 
 function App() {
   
@@ -10,7 +10,7 @@ function App() {
   return (
     <Layout theme="light-theme">
       <Header />
-      <Foundation />
+    
     </Layout>
   );
 }
