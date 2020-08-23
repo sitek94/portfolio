@@ -3,7 +3,7 @@ import './button.scss';
 import cx from 'classnames';
 
 export default function Button({ className, white, green, animated, children, ...props }) {
-  const className = cx({
+  const classNames = cx({
     "btn": true,
     "btn--white": white,
     "btn--green": green,
@@ -12,6 +12,6 @@ export default function Button({ className, white, green, animated, children, ..
   })
 
   return (
-    <a {...props} className={className}>{children}</a>
+    <a {...props} className={classNames}>{children}</a>
   )
 }

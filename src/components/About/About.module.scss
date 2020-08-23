@@ -1,0 +1,17 @@
+.container {
+    background-color: var(--gray-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--gutter-horizontal);
+}
+
+
+
