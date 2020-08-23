@@ -28,7 +28,7 @@ export default function About() {
             praesentium officiis? Voluptatum, officiis?
           </p>
 
-          <a href="#" class="btn-text">
+          <a href="#home" class="btn-text">
             Learn more &rarr;
           </a>
         </div>

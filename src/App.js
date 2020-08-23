@@ -7,6 +7,7 @@ import Header from './sections/header';
 import About from './sections/about';
 import Features from './sections/features';
 import Projects from './sections/projects';
+import Footer from './sections/footer';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Features />
       <Projects />
+      <Footer />
     </div>
   );
 }

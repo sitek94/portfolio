@@ -24,7 +24,7 @@ export default function Header() {
                 <span className="heading-primary--sub">software engineer</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#homehome" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
       
     </header>

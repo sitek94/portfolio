@@ -24,7 +24,7 @@
         @include center-absolute;
         width: 75%;
         background-color: var(--white);
-        color: $color-grey-dark-3;
+        color: var(--gray-75);
         border-radius: 3px;
         display: table;
         overflow: hidden;
@@ -76,7 +76,7 @@
     &__close {
         &:link,
         &:visited {
-            color: $color-grey-dark-3;
+            color: var(--gray-75);
             position: absolute;
             top: 2.5rem;
             right: 2.5rem;
