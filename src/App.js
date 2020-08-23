@@ -8,6 +8,7 @@ import About from './components/about';
 import Features from './components/features';
 import Projects from './components/projects';
 import Footer from './components/footer';
+import Popup from './components/popup';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Features />
       <Projects />
       <Footer />
+      <Popup />
     </div>
   );
 }

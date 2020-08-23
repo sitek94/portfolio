@@ -33,7 +33,7 @@ export default function Projects() {
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$297</p>
                 </div>
-                <a href="#homepopup" class="btn btn--white">
+                <a href="#popup" class="btn btn--white">
                   Book now
                 </a>
               </div>
@@ -66,7 +66,7 @@ export default function Projects() {
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$497</p>
                 </div>
-                <a href="#homepopup" class="btn btn--white">
+                <a href="#popup" class="btn btn--white">
                   Book now
                 </a>
               </div>
@@ -99,7 +99,7 @@ export default function Projects() {
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$897</p>
                 </div>
-                <a href="#homepopup" class="btn btn--white">
+                <a href="#popup" class="btn btn--white">
                   Book now
                 </a>
               </div>
