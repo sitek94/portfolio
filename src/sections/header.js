@@ -1,10 +1,7 @@
 import React from 'react';
-import './header.scss';
 
-import Button from '../Button/index';
-
-import videoMp4 from '../../images/bg-video.mp4';
-import videoWebm from '../../images/bg-video.webm';
+import videoMp4 from '../images/bg-video.mp4';
+import videoWebm from '../images/bg-video.webm';
 
 export default function Header() {
   return (
@@ -27,7 +24,7 @@ export default function Header() {
                 <span className="heading-primary--sub">software engineer</span>
             </h1>
 
-            <Button href="#projects" white animated>Projects</Button>
+            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
       
     </header>

@@ -4,7 +4,7 @@
     }
 
     &__button {
-        background-color: $color-white;
+        background-color: var(--white);
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -12,7 +12,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        box-shadow: 0 1rem 3rem rgba(var(--black-rgb), .1);
         text-align: center;
         cursor: pointer;
 
@@ -33,7 +33,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        background-image: radial-gradient(var(--theme-light), $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
 
@@ -78,7 +78,7 @@
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 2rem;
-            color: $color-white;
+            color: var(--white);
             text-decoration: none;
             text-transform: uppercase;
         
@@ -96,7 +96,7 @@
 
         &:active,
         &:hover {
-            color: $color-primary;
+            color: var(--theme);
             background-position: 100%;
             transform: translateX(1rem);
         }

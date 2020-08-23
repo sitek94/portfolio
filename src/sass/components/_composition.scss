@@ -3,7 +3,7 @@
 
     &__photo {
         width: 55%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        box-shadow: 0 1.5rem 4rem rgba(var(--black-rgb), .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
@@ -15,7 +15,7 @@
             float: left;
             position: relative;
             width: 33.333333333%;
-            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+            box-shadow: 0 1.5rem 3rem rgba(var(--black-rgb), .2);
         }
 
         &--p1 {
@@ -51,9 +51,9 @@
         }
 
         &:hover {
-            outline: 1.5rem solid $color-primary;
+            outline: 1.5rem solid var(--theme);
             transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            box-shadow: 0 2.5rem 4rem rgba(var(--black-rgb), .5);
             z-index: 20;
         }
     }

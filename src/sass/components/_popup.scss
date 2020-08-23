@@ -4,7 +4,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, .8);
+    background-color: rgba(var(--black-rgb), .8);
     z-index: 9999;
 
     // Hide popup
@@ -17,13 +17,13 @@
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba($color-black, .3);
+        background-color: rgba(var(--black-rgb), .3);
     }
 
     &__content {
         @include center-absolute;
         width: 75%;
-        background-color: $color-white;
+        background-color: var(--white);
         color: $color-grey-dark-3;
         border-radius: 3px;
         display: table;

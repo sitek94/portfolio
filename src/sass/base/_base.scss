@@ -33,6 +33,6 @@ body {
 }
 
 ::selection { 
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: var(--theme);
+  color: var(--white);
 }

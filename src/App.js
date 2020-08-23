@@ -1,20 +1,23 @@
 import React from 'react';
 
-import Header from './components/Header';
+import './sass/main.scss';
 
-import Layout from './layout';
-import About from './components/About';
-import Features from './components/Features';
+import Header from './sections/header';
+
+import About from './sections/about';
+import Features from './sections/features';
+import Projects from './sections/projects';
 
 function App() {
   
 
   return (
-    <Layout theme="light-theme">
+    <div className="light-theme"> 
       <Header />
       <About />
       <Features />
-    </Layout>
+      <Projects />
+    </div>
   );
 }
 
