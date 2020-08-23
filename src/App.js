@@ -9,12 +9,14 @@ import Features from './components/features';
 import Projects from './components/projects';
 import Footer from './components/footer';
 import Popup from './components/popup';
+import Navigation from './components/navigation';
 
 function App() {
   
 
   return (
-    <div className="light-theme"> 
+    <div className="light-theme">
+      <Navigation />
       <Header />
       <About />
       <Features />
