@@ -2,12 +2,12 @@ import React from 'react';
 
 import './sass/main.scss';
 
-import Header from './sections/header';
+import Header from './components/header';
 
-import About from './sections/about';
-import Features from './sections/features';
-import Projects from './sections/projects';
-import Footer from './sections/footer';
+import About from './components/about';
+import Features from './components/features';
+import Projects from './components/projects';
+import Footer from './components/footer';
 
 function App() {
   
