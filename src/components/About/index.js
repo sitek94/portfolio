@@ -1,10 +1,16 @@
 import React from 'react';
 
+import './About.scss';
+
+import cs50Light from '../../images/cs50-light-theme.png';
+import fccLight from '../../images/fcc-light-theme.png';
+import udemy from '../../images/udemy.png';
+
 export default function About() {
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">Exiting tours for adventurous people</h2>
+        <h2 className="heading-secondary">My journey from customer service to front end</h2>
       </div>
 
       <div className="row">
@@ -36,38 +42,17 @@ export default function About() {
         <div className="col-1-of-2">
           <div className="composition">
             <img
-              srcSet="../images/nat-1.jpg 300w, ../images/nat-1-large.jpg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              src="../images/nat-1-large.jpg"
-              className="composition__photo composition__photo--p1"
-              alt="1"
-            />
-            <img
-              srcSet="../images/nat-2.jpg 300w, ../images/nat-2-large.jpg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              src="../images/nat-2-large.jpg"
-              className="composition__photo composition__photo--p2"
-              alt="2"
-            />
-            <img
-              srcSet="../images/nat-3.jpg 300w, ../images/nat-3-large.jpg 1000w"
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              src="../images/nat-3-large.jpg"
-              className="composition__photo composition__photo--p3"
-              alt="3"
-            />
-            <img
-              src="../images/nat-1-large.jpg"
+              src={cs50Light}
               alt="1"
               className="composition__photo composition__photo--p1"
             />
             <img
-              src="../images/nat-2-large.jpg"
+              src={fccLight}
               alt="2"
               className="composition__photo composition__photo--p2"
             />
             <img
-              src="../images/nat-3-large.jpg"
+              src={udemy}
               alt="3"
               className="composition__photo composition__photo--p3"
             />

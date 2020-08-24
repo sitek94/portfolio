@@ -1,51 +1,56 @@
 import React from 'react';
 
+import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { SiJavascript } from 'react-icons/si';
+
+function Feature({ heading, list, icon }) {
+  return (
+    <div className="feature-box">
+      <div className="feature-box__icon">{icon}</div>
+      <h3 className="heading-tertiary">{heading}</h3>
+      <ul>
+        {list.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function Features() {
   return (
     <section className="section-features">
       <div className="row">
         <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary">Explore the World</h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              officia unde. Quisquam, nisi dolor!
-            </p>
-          </div>
+          <Feature
+            icon={<FaHtml5 />}
+            heading="HTML"
+            list={['Semantics', 'Accessibility', 'Forms', 'Validations']}
+          />
         </div>
 
         <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-compass"></i>
-            <h3 className="heading-tertiary">Meet nature</h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              officia unde. Quisquam, nisi dolor!
-            </p>
-          </div>
+          <Feature
+            icon={<FaCss3Alt />}
+            heading="CSS"
+            list={['CSS Grid', 'Flex box', 'SASS/SCSS', 'Responsive Design']}
+          />
         </div>
 
         <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-map"></i>
-            <h3 className="heading-tertiary">Find your way</h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              officia unde. Quisquam, nisi dolor!
-            </p>
-          </div>
+          <Feature
+            icon={<SiJavascript />}
+            heading="JavaScript"
+            list={['DOM Manipulation', 'ES6+', 'AJAX', 'Modular JavaScript']}
+          />
         </div>
 
         <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-heart"></i>
-            <h3 className="heading-tertiary">Live healthier life</h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              officia unde. Quisquam, nisi dolor!
-            </p>
-          </div>
+          <Feature
+            icon={<FaReact />}
+            heading="React"
+            list={['Hooks', 'React Router', 'Redux', 'Material UI']}
+          />
         </div>
       </div>
     </section>
