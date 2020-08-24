@@ -1,16 +1,15 @@
 import React from 'react';
 
 import './About.scss';
-
-import cs50Light from '../../images/cs50-light-theme.png';
-import fccLight from '../../images/fcc-light-theme.png';
-import udemy from '../../images/udemy.png';
+import Composition from '../Composition';
 
 export default function About() {
   return (
     <section className="section-about">
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">My journey from customer service to front end</h2>
+        <h2 className="heading-secondary">
+          Front end with a strong foundation
+        </h2>
       </div>
 
       <div className="row">
@@ -40,23 +39,7 @@ export default function About() {
         </div>
 
         <div className="col-1-of-2">
-          <div className="composition">
-            <img
-              src={cs50Light}
-              alt="1"
-              className="composition__photo composition__photo--p1"
-            />
-            <img
-              src={fccLight}
-              alt="2"
-              className="composition__photo composition__photo--p2"
-            />
-            <img
-              src={udemy}
-              alt="3"
-              className="composition__photo composition__photo--p3"
-            />
-          </div>
+          <Composition />
         </div>
       </div>
     </section>
