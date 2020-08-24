@@ -11,24 +11,20 @@
         padding: 2rem;
     }
 
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+
     &__icon {
         font-size: 6rem;
-        display: inline-block;
-        background-image: linear-gradient(
-            to right,
-            var(--theme-light),
-            var(--theme-dark));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-
         
         @include respond(tab-port) {
             margin-bottom: 0;
         }
     }
 
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
+    ul {
+        list-style: none;
     }
+
 }
