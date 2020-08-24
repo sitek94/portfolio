@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './sass/main.scss';
 
-import Header from './components/header';
+import Header from './components/Header';
 
 import About from './components/About';
 import Features from './components/features';
