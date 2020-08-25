@@ -59,6 +59,7 @@ body {
 }
 
 .paragraph {
+  text-align: justify;
   font-size: var(--default-font-size);
 
   &:not(:last-child) {
