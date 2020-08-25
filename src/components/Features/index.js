@@ -1,4 +1,5 @@
 import React from 'react';
+import './Features.scss';
 
 import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
