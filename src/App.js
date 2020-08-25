@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './sass/main.scss';
 
 import Header from './components/Header';
-
+import Features from './components/Features/';
 import About from './components/About';
-import Features from './components/features';
-import Projects from './components/projects';
+
+import Projects from './components/Projects';
 import Footer from './components/footer';
 import Popup from './components/Popup';
 import Navigation from './components/navigation';
+
 
 function App() {
   
